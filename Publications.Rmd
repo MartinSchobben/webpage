@@ -1,27 +1,27 @@
 ---
-rmaktitle: "Publications"
+title: "Publications"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Schobben, M., Ullmann, C.V., Leda, L., Korn, D., Struck, U., Reimold, W.U., Ghaderi, A., Algeo, T.J. Korte, C., 2016. Discerning primary versus diagenetic signals in carbonate carbon and oxygen isotope records: An example from the Permian-Triassic boundary of Iran, Chemical Geology 422, 94-107, (<http://dx.doi.org/10.1016/j.chemgeo.2015.12.013>). 
 
-```{r cars}
-summary(cars)
-```
+Korn, D., Ghaderi, A., Leda, L., Schobben, M., Ashouri, A.R., 2016. The ammonoids from the Late Permian Paratirolites Limestone of Julfa (East Azerbaijan, Iran). Journal of Systematic Palaeontology 15, 841-890, (<http://dx.doi.org/10.1080/14772019.2015.1119211>).
 
-## Including Plots
+Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2015b. Eutrophication, microbial-sulfate reduction and mass extinctions, Comparative and Integrative Biology 9, 1-9, (<http://dx.doi.org/10.1080/19420889.2015.1115162>). 
 
-You can also embed plots, for example:
+Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2015a. Flourishing ocean drives the end-Permian marine mass extinction. Proc Natl. Acad. Sci. U.S.A. 112, 10298-10303, (<http://pnas.org/cgi/doi/10.1073/pnas.1503755112>). 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+Schobben, M., Joachimski, M. M., Korn, D., Leda, L., Korte, C., 2014. Palaeotethys seawater temperature rise and an intensified hydrological cycle following the end-Permian mass extinction, Gondwana Research 26, 675-683, (<http://dx.doi.org/10.1016/j.gr.2013.07.019>). 
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Ghaderi, A., Leda, L., Schobben, M., Korn, D., Ashouri, A. R., 2014. High-resolution stratigraphy of the Changhsingian (Late Permian) successions of NW Iran and the Transcaucasus based on lithological features, conodonts and ammonoids, Fossil Record 17, 41-57, (<http://www.foss-rec.net/17/41/2014/>). 
+
+Hillebrandt, A.v., Krystyn, L., Kuerschner, W. M., Bonis, N. R., Ruhl, M., Richoz, S., Schobben, M., Urlichs, M., Bown, P. R., Kment, K., McRoberts, C. A., Simms, M., Tomašových, A., 2013. The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic system at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria), Episodes 36(3), 162-198, (<http://www.episodes.org/index.php/epi/article/view/59404>). 
+
+
+
+
+
+
+

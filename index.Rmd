@@ -1,15 +1,17 @@
 ---
-title: "My Website"
+title: "Martin Schobben"
 ---
 
-Hello, Website!
+I am a research fellow at the University of Leeds. Recently, I started a postdoctoral research project, under the title: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction (PHoSPhoR), funded by the Deutsche Forschungsgemeinshaft (DFG).
+
+
+
 
 
 <div style="width:673px; height=504px">
 ![](Arasvalley.png) </div> 
 
 <p><font size="2">
-Aras Valley section (NW Iran) on the foreground, the river Aras (or Araxes)
-which is the border between Azerbaijan and Iran. In the background the Dorasham 2 section
-on Azerbaijan territory can be seen. 
+The Permian Triassic boundary section at Aras Valley (NW Iran) on the foreground, the river Aras (or Araxes)
+which is the border between Azerbaijan and Iran. In the background one can see the Dorasham 2 section on Azerbaijan territory. 
 </font></p>
