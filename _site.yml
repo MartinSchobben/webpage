@@ -1,4 +1,4 @@
-name: "my-website"
+name: "Martin Schobben"
 navbar:
   title: "Martin Schobben"
   left:
@@ -12,14 +12,16 @@ navbar:
       href: CV.html
     - text: "Publications"
       href: Publications.html
+    - text: "Promoted"
+      href: Promoted.html
   right:
     - text: "Contact"
       href: contact.html
-      
 output:
   html_document:
     theme: spacelab
     highlight: zenburn
-    include:
+    includes:
       after_body: footer.html
+      in_header: header.html
 output_dir: "."

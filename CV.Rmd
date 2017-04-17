@@ -1,123 +1,203 @@
 ---
 title: "Curriculum vitae"
+output:
+  html_document:
+    css: TOC_edited2.css
+    toc: TRUE
+    toc_depth: 2
+    toc_float:
+      collapsed: FALSE
 ---
 
+---
 
-### Research experience
+<h1 style="text-align:center;">
+Research experience 
+</h1>
 
-**2016 – Univeresity of Leeds - DFG Research Fellowship**
+<h2 style="text-align:left;">
+2016
+</h2>
+
+
+**University of Leeds - DFG Research Fellowship**
 
 Hosts: Prof. Simon Poulton, Dr. Robert Newton and Prof. Paul Wignall
 
 Project title: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction (PHoSPhoR)
 
-**2015 - 2016 Museum für Naturkunde Berlin**
+<h2 style="text-align:left;">
+2015 - 2016 
+</h2> 
+
+**Museum für Naturkunde Berlin**
 
 Project supervisor: Dr. Martin Aberhan
 
 Project title: Carbon isotope analysis of a new Triassic/Jurassic boundary section (Bonenburg,Germany): implications for the dynamics of environmental perturbations and faunal response across the end-Triassic mass extinction event
 
-**2015 - 2016 Museum für Naturkunde Berlin and GFZ Helmholtz-Zentrum Potsdam**
+</br>
 
-1280-HR SIMS facility operated by Michael Wiedenbeck
+**Museum für Naturkunde Berlin and GFZ Helmholtz-Zentrum Potsdam**
+
+1280-HR SIMS facility operated by Dr. Michael Wiedenbeck
 
 Project title: SIMS in oxygen isotope paleothermometry based on conodont apatite
 
+<h2 style="text-align:left;">
+2011 – 2015
+</h2> 
 
-**2011 – 2015 Museum für Naturkunde Berlin**
+**Museum für Naturkunde Berlin**
 
 PhD candidate with Dr. Christoph Korte and Dr. Dieter Korn
 
 Project title: The Permian-Triassic boundary and the Early Triassic in Transcaucasian pelagic sections
 
+<h2 style="text-align:left;">
+2011
+</h2> 
 
-**2011 Utrecht University**
+**Utrecht University**
 
 Internship with Dr. Lennart de Nooijer and Dr. Gert-Jan Reichart
 
-Project title: Impact of different seawater [Ca 2+ ] on calcification in the benthic foraminifera Ammoni spp.
+Project title: Impact of different seawater [Ca^2+^] on calcification in the benthic foraminifera <i>Ammoni spp.</i>
 
 
-**2011 Utrecht University**
+**Utrecht University**
 
 Graduate student with Dr. Wolfram Kürschner and Dr. Gert-Jan Reichart
 
 Project title: Marine and terrestrial proxy records of environmental changes across the Triassic-Jurrasic transition; A combined geochemical and
 palynological approach
 
+<h2 style="text-align:left;">
+2009
+</h2> 
 
-**2009 Utrecht University**
+**Utrecht University**
 
 Undergraduate student with Dr. Wolfram Kürschner and Dr. Frits Hilgen
 
 Project title: A high resolution palynological and carbon isotope study on the GSSP of the Triassic-Jurassic boundary in the Kuhjoch section (Austria)
 
+---
 
-### Education
+<h1 style="text-align:center;">
+Education
+</h1> 
 
-**2011 – 2015 Freie Universität Berlin**
+<h2 style="text-align:left;">
+2011 – 2015
+</h2>
+
+**Freie Universität Berlin**
 
 Thesis title: Geochemical proxy records for climatic and environmental changes across the Permian-Triassic boundary of key sections in NW Iran
 
 Degree: PhD (Dr. rer. nat.), magna cum laude
 
-**2009 – 2011 Utrecht University**
+<h2 style="text-align:left;">
+2009 – 2011 
+</h2>
+
+**Utrecht University**
 
 Study of Biogeology
 
 Degree: Master of Science, GPA 3.74
 
-**2005 – 2009 Utrecht University**
+<h2 style="text-align:left;">
+2005 – 2009
+</h2>
+
+**Utrecht University**
 
 Study of Earth Sciences
 
 Degree: Bachelor of Science, GPA 3.00
 
+---
 
-### Skills and social commitment
+<h1 style="text-align:center;">
+Skills and social commitment
+</h1>
 
-2013 – 2015 PhD representative Museum für Naturkunde Berlin
+<h2 style="text-align:left;">
+2013 – 2015 
+</h2>
 
-### Languages
-Dutch (first language)
-
-Englisch (business fluent)
-
-German (business fluent)
-
-French (basic knowledge)
+PhD representative Museum für Naturkunde Berlin
 
 
-### Analytical skills 
+---
+
+<h1 style="text-align:center;">
+Languages
+</h1>
+
+* Dutch (first language)
+* Englisch (business fluent)
+* German (business fluent)
+* French (basic knowledge)
+
+---
+
+<h1 style="text-align:center;">
+Analytical skills 
+</h1>
 
 Wet-chemical treatment of sediment samples as preparation for isotope measurements on organic and inorganic components, iron speciation and
 Chromium-reducible sulfur-extraction
 
 Experience with SEM imaging, Raman spectroscopy, EA, MS, ICP-OES, XRF, AAS and SIMS (GFZ Helmholtz-Zentrum Potsdam)
 
-### Reviews 
-Palaeo3, Global and Planetary Change, Geoscience Frontiers, Science, Canadian Journal of Earth Sciences, Geochimica et Cosmochimica Acta.
+---
 
-### Grants 
+<h1 style="text-align:center;">
+Reviewer duties 
+</h1>
+
+Palaeo3 (Palaeogeography, Palaeoclimatology, Palaeoecology), Global and Planetary Change, Geoscience Frontiers, Science, Canadian Journal of Earth Sciences, Geochimica et Cosmochimica Acta, Geological Society of America Bulletin.
+
+
+---
+
+<h1 style="text-align:center;">
+Grants 
+</h1>
 
 DFG Research Fellowship: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction (PHoSPhoR)
 
 MfN Innovationsfond (Museum für Naturkunde Berlin, institute internal grant): SIMS in oxygen isotope paleothermometry based on conodont
 apatite
 
-### IT skills 
+---
+
+<h1 style="text-align:center;">
+IT skills 
+</h1>
+
 **Advanced knowledge**
 
-Windows, Linux and OSX
+* Windows, Linux and OSX
 
-Programming language R (Data visualization, statistics and biogeochemical modeling)
+* Programming language R (Data visualization, statistics and biogeochemical modeling)
 
-Microsoft Office, Libre Office and LATEX
+* Microsoft Office, Libre Office and LATEX
 
-Reference managers Mendeley and EndNote
+* Reference managers Mendeley and EndNote
 
-Adobe Illustrator and Inkscape
+* Adobe Illustrator and Inkscape
+
+</br>
 
 **Basic knowledge**
 
-Image editing with Photoshop
+* Image editing with Photoshop
+ 
+
+</br>
+</br>
+</br>

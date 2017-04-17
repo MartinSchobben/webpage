@@ -1,21 +1,47 @@
 ---
 title: "Martin Schobben"
+output:
+  html_document:
+    includes:
+      before_body: logo.html
+    css: hanging.css
 ---
 
-I am a research fellow at the University of Leeds. Recently, I started a postdoctoral research project, under the title: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction (PHoSPhoR), funded by the Deutsche Forschungsgemeinshaft (DFG).
+<p style="text-align:justify;">
+I am a research fellow at the [University of Leeds](http://www.see.leeds.ac.uk/people/m.schobben). Recently, I started a postdoctoral research project, under the title: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction ([PHoSPhoR](http://gepris.dfg.de/gepris/projekt/288773903)), funded by the Deutsche Forschungsgemeinshaft (DFG).
+</p>
 
+My current research profile encompasses three main areas of interest: 
+
+* [Carbonate diagenesis and stratigraphy](https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy)
+
+* [Strangelove oceans vs. living oceans](https://martinschobben.github.io/webpage/Projects.html#_strangelove_oceans_vs_living_oceans_)
+
+* [Isotope palaeontology](https://martinschobben.github.io/webpage/Projects.html#_isotope_palaeontology_)
+
+---
+
+**Two upcoming talks in the next months**
+
+IGCP630 Annual Symposium: Permian and Triassic climatic and environmental extremes and biotic response, held on June 14-16, 2017, in Tohoku University, Sendai, Japan (keynote)
+
+[EGU](http://meetingorganizer.copernicus.org/EGU2017/EGU2017-3037-3.pdf) General Assembly 2017, held on April 23-28 in Vienna 
+
+
+
+---
 
 **New publication online!**
 
+<div class="hangingindent">
 Martin Schobben, Alan Stebbins, Thomas J. Algeo, Harald Strauss, Lucyna Leda, János Haas, Ulrich Struck, Dieter Korn, Christoph Korte, Volatile earliest Triassic sulfur cycle: A consequence of persistent low seawater sulfate concentrations and a high sulfur cycle turnover rate?, Palaeogeography, Palaeoclimatology, Palaeoecology, Available online 22 February 2017, ISSN 0031-0182, (<http://dx.doi.org/10.1016/j.palaeo.2017.02.025>).
+</div>
 
 PDF available on request.
 
+---
 
-<div style="width:673px; height=504px">
-![](Arasvalley.png) </div> 
 
-<p><font size="2">
-The Permian--Triassic boundary section at Aras Valley (NW Iran) on the foreground, the river Aras (or Araxes)
-which is the border between Azerbaijan and Iran. In the background one can see the Dorasham 2 section on Azerbaijan territory. 
-</font></p>
+<br>
+<br>
+<br>
