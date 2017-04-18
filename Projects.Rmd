@@ -109,7 +109,7 @@ This geochemical approach can be taken one step further, and rests on the observ
 
 ![](CalvinCycle.png)
 <p style="text-align:justify;"><font size="2"><i>  
-The Calvin Cycle is part of the light-independent biochemical reactions that governs the synthesis of complex organic carbon molecules. The enzyme RuBisCO is central in this cycle, and, in addition, in parts an isotope fractionation, which enriches the produced organic carbon molecules with the lighter C-12.
+The Calvin Cycle is part of the light-independent biochemical reactions that governs the synthesis of complex organic carbon molecules. The enzyme RuBisCO is central in this cycle, and, in addition, in parts an isotope fractionation which enriches the produced organic carbon molecules with the lighter C-12.
 </i></font></p>
 
 ---

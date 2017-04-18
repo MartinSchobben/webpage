@@ -24,4 +24,8 @@ output:
     includes:
       after_body: footer.html
       in_header: header.html
+gems: 
+  - jekyll-seo-tag
 output_dir: "."
+
+
