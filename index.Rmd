@@ -1,5 +1,6 @@
 ---
 title: "Martin Schobben"
+description: "isotope geochemistry, palaeontology, Permian, Triassic, Earth system"
 output:
   html_document:
     includes:
