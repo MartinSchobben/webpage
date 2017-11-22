@@ -16,10 +16,21 @@ output:
 2017
 </h2> 
 
+<div class="hangingindent">
+
+Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (accepted). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds  Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).
+
+</div>
 
 <div class="hangingindent">
 
-Schobben, M., Stebbins, A., Algeo, T.J., Strauss, H., Leda, L., Haas, J., Struck, U., Korn, D., Korte, C., Volatile earliest Triassic sulfur cycle: A consequence of persistent low seawater sulfate concentrations and a high sulfur cycle turnover rate?, Palaeogeography, Palaeoclimatology, Palaeoecology, Available online 22 February 2017, (<http://dx.doi.org/10.1016/j.palaeo.2017.02.025>).
+Schobben, M., Van De Velde, S., Gliwa, J., Leda, L., Korn, D., Struck, U., Ullmann, C.V., Hairapetian, V., Ghaderi, A.,Korte, C., Newton, R. J., Poulton, S. W. and Wignall, P. B. 2017b. Latest Permian carbonate-carbon isotope variability traces heterogeneous organic carbon accumulation and authigenic carbonate formation. Climate of the Past 13, 1635--1659 (<https://doi.org/10.5194/cp-13-1635-2017>). 
+
+</div>
+
+<div class="hangingindent">
+
+Schobben, M., Stebbins, A., Algeo, T.J., Strauss, H., Leda, L., Haas, J., Struck, U., Korn, D., Korte, C., 2017a. Volatile earliest Triassic sulfur cycle: A consequence of persistent low seawater sulfate concentrations and a high sulfur cycle turnover rate?, Palaeogeography, Palaeoclimatology, Palaeoecology 486, 74--85, (<http://dx.doi.org/10.1016/j.palaeo.2017.02.025>).
 
 </div>
 
@@ -30,15 +41,15 @@ Schobben, M., Stebbins, A., Algeo, T.J., Strauss, H., Leda, L., Haas, J., Struck
 </h2> 
 
 <div class="hangingindent">
-Schobben, M., Ullmann, C.V., Leda, L., Korn, D., Struck, U., Reimold, W.U., Ghaderi, A., Algeo, T.J. Korte, C., 2016. Discerning primary versus diagenetic signals in carbonate carbon and oxygen isotope records: An example from the Permian-Triassic boundary of Iran, Chemical Geology 422, 94-107, (<http://dx.doi.org/10.1016/j.chemgeo.2015.12.013>). 
+Schobben, M., Ullmann, C.V., Leda, L., Korn, D., Struck, U., Reimold, W.U., Ghaderi, A., Algeo, T.J. Korte, C., 2016. Discerning primary versus diagenetic signals in carbonate carbon and oxygen isotope records: An example from the Permian-Triassic boundary of Iran, Chemical Geology 422, 94--107, (<http://dx.doi.org/10.1016/j.chemgeo.2015.12.013>). 
 </div>
 
 <div class="hangingindent">
-Korn, D., Ghaderi, A., Leda, L., Schobben, M., Ashouri, A.R., 2016. The ammonoids from the Late Permian Paratirolites Limestone of Julfa (East Azerbaijan, Iran). Journal of Systematic Palaeontology 15, 841-890, (<http://dx.doi.org/10.1080/14772019.2015.1119211>).
+Korn, D., Ghaderi, A., Leda, L., Schobben, M., Ashouri, A.R., 2016. The ammonoids from the Late Permian Paratirolites Limestone of Julfa (East Azerbaijan, Iran). Journal of Systematic Palaeontology 15, 841--890, (<http://dx.doi.org/10.1080/14772019.2015.1119211>).
 </div>
 
 <div class="hangingindent">
-Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2016. Eutrophication, microbial-sulfate reduction and mass extinctions, Comparative and Integrative Biology 9, 1-9, (<http://dx.doi.org/10.1080/19420889.2015.1115162>). 
+Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2016. Eutrophication, microbial-sulfate reduction and mass extinctions, Comparative and Integrative Biology 9, 1--9, (<http://dx.doi.org/10.1080/19420889.2015.1115162>). 
 </div>
 
 ---
@@ -48,7 +59,7 @@ Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2016.
 </h2> 
 
 <div class="hangingindent">
-Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2015. Flourishing ocean drives the end-Permian marine mass extinction. Proc Natl. Acad. Sci. U.S.A. 112, 10298-10303, (<http://pnas.org/cgi/doi/10.1073/pnas.1503755112>). 
+Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2015. Flourishing ocean drives the end-Permian marine mass extinction. Proc Natl. Acad. Sci. U.S.A. 112, 10298--10303, (<http://pnas.org/cgi/doi/10.1073/pnas.1503755112>). 
 </div>
 
 ---
@@ -58,11 +69,11 @@ Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2015.
 </h2>
 
 <div class="hangingindent">
-Schobben, M., Joachimski, M. M., Korn, D., Leda, L., Korte, C., 2014. Palaeotethys seawater temperature rise and an intensified hydrological cycle following the end-Permian mass extinction, Gondwana Research 26, 675-683, (<http://dx.doi.org/10.1016/j.gr.2013.07.019>). 
+Schobben, M., Joachimski, M. M., Korn, D., Leda, L., Korte, C., 2014. Palaeotethys seawater temperature rise and an intensified hydrological cycle following the end-Permian mass extinction, Gondwana Research 26, 675--683, (<http://dx.doi.org/10.1016/j.gr.2013.07.019>). 
 </div>
 
 <div class="hangingindent">
-Ghaderi, A., Leda, L., Schobben, M., Korn, D., Ashouri, A. R., 2014. High-resolution stratigraphy of the Changhsingian (Late Permian) successions of NW Iran and the Transcaucasus based on lithological features, conodonts and ammonoids, Fossil Record 17, 41-57, (<http://www.foss-rec.net/17/41/2014/>). 
+Ghaderi, A., Leda, L., Schobben, M., Korn, D., Ashouri, A. R., 2014. High-resolution stratigraphy of the Changhsingian (Late Permian) successions of NW Iran and the Transcaucasus based on lithological features, conodonts and ammonoids, Fossil Record 17, 41--57, (<http://www.foss-rec.net/17/41/2014/>). 
 </div>
 
 ---
@@ -73,7 +84,7 @@ Ghaderi, A., Leda, L., Schobben, M., Korn, D., Ashouri, A. R., 2014. High-resolu
 
 
 <div class="hangingindent">
-Hillebrandt, A.v., Krystyn, L., Kuerschner, W. M., Bonis, N. R., Ruhl, M., Richoz, S., Schobben, M., Urlichs, M., Bown, P. R., Kment, K., McRoberts, C. A., Simms, M., Tomašových, A., 2013. The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic system at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria), Episodes 36(3), 162-198, (<http://www.episodes.org/index.php/epi/article/view/59404>). 
+Hillebrandt, A.v., Krystyn, L., Kuerschner, W. M., Bonis, N. R., Ruhl, M., Richoz, S., Schobben, M., Urlichs, M., Bown, P. R., Kment, K., McRoberts, C. A., Simms, M., Tomašových, A., 2013. The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic system at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria), Episodes 36(3), 162--198, (<http://www.episodes.org/index.php/epi/article/view/59404>). 
 </div>
 
 <br>
