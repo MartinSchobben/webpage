@@ -9,7 +9,7 @@ output:
 ---
 
 <p style="text-align:justify;">
-I am a research fellow at the [University of Leeds](http://www.see.leeds.ac.uk/people/m.schobben). Recently, I started a postdoctoral research project, under the title: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction ([PHoSPhoR](http://gepris.dfg.de/gepris/projekt/288773903)), funded by the Deutsche Forschungsgemeinshaft (DFG).
+I am a postodoctoral researcher at [Utrecht University](https://www.uu.nl/staff/manschobben). 
 </p>
 
 My current research profile encompasses three main areas of interest: 
