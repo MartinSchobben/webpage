@@ -8,6 +8,32 @@ output:
     toc_float:
       collapsed: FALSE
 ---
+---
+
+<h2 style="text-align:center;">
+2019
+</h2> 
+
+<div class="hangingindent">
+
+Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (2019). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds  Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).
+
+</div>
+
+
+
+
+---
+
+<h2 style="text-align:center;">
+2018
+</h2> 
+
+<div class="hangingindent">
+
+Kiessling, W., Schobben, M., Ghaderi, A., Hairapetian, V., Leda, L., Korn, D. 2018. Pre–mass extinction decline of latest Permian ammonoids. Geology (<https://doi.org/10.1130/G39866.1>)
+</div>
+
 
 
 ---
@@ -15,12 +41,6 @@ output:
 <h2 style="text-align:center;">
 2017
 </h2> 
-
-<div class="hangingindent">
-
-Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (accepted). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds  Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).
-
-</div>
 
 <div class="hangingindent">
 
