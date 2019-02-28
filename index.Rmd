@@ -23,11 +23,19 @@ My current research profile encompasses three main areas of interest:
 
 ---
 
-**New publication: AGU Geophysical Monograph series!**
+**New publications: AGU Geophysical Monograph series and Newsletters on Stratigraphy!**
+
+<div class="hangingindent">
+
+Schobben M. , Gravendyck J., Mangels F., Struck U., Bussert R., Kürschner W.M., Korn D., Sander P.M., Aberhan M. (2019), A comparative study of total organic carbon-$\delta^{13}C$ signatures in the Triassic–Jurassic transitional beds of the Central European Basin and western Tethys shelf seas, Newsletters on Stratigraphy.
+
+</div>
 
 <div class="hangingindent">
 
 Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (2019). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds  Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).
+
+
 
 </div>
 
