@@ -12,6 +12,9 @@ output:
 I am a postdoctoral researcher at [Utrecht University](https://www.uu.nl/staff/manschobben). 
 </p>
 
+[ORCID ID](https://orcid.org/0000-0001-8560-0037)
+</br>
+
 My current research profile encompasses several research interests: 
 
 * [Carbonate diagenesis and stratigraphy](https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy)
@@ -23,7 +26,7 @@ My current research profile encompasses several research interests:
 
 ---
 
-**New updates to point R package for ion count statistics are pending along with a preprint detailing the methods of the package**
+**New updates to the point R package for ion count statistics are pending along with a preprint detailing the methods of the package**
 
 <div class="hangingindent">
 
