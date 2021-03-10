@@ -8,110 +8,142 @@ output:
     toc_float:
       collapsed: FALSE
 ---
----
 
-<h2 style="text-align:center;">
-2019
-</h2> 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  # collapse = TRUE,
+  out.width = "100%",
+  warning = FALSE, 
+  results = "asis",
+  encoding = 'UTF-8',
+  echo = FALSE
+)
+```
+
+
+```{r pkg, include=FALSE}
+
+invisible(lapply(list("scholar", "tidyverse", "kableExtra", "knitr"), library, character.only = TRUE)) # get my profile Google scholar
+
+```
+
+
+
+```{r publist}
+ls_pubs <- get_publications("y-t4A90AAAAJ&hl") 
+ls_chapter <- ls_pubs %>% filter(str_detect(journal, "Chemostratigraphy"))
+ls_art <- ls_pubs %>% filter(!str_detect(journal, "Chemostratigraphy"))
+  
+filter_entries <- function(df){
+  
+  df %>%   
+    mutate(number = if_else(str_detect(journal, "Elements"), "15(5)", number),
+           number = na_if(number, "")) %>%
+    filter(
+      !str_detect(number, "Meeting"),
+      !str_detect(number, "Congress"),
+      !str_detect(journal, "Abstracts"),
+      !str_detect(journal, "EGU"),
+      !str_detect(journal, "IGCP")
+           ) %>%
+    drop_na(number) %>%
+    mutate(
+      journal = 
+           if_else(
+             str_detect(journal, "&"), 
+             str_replace(journal, "&", "and"), 
+             journal
+             ),
+      journal = 
+           if_else(
+             str_detect(journal, "Elements"), 
+             "Elements", 
+             journal
+             ),
+      author = 
+             if_else(
+               str_detect(author, "Schobben"), 
+               author, 
+               str_replace(author, "\\.\\.\\.", " M Schobben")
+               )
+      ) %>% 
+    arrange(desc(year)) %>% 
+    mutate(
+      cites = paste0("(citations: ", cites,")"),
+      journal = paste0("**", journal, "**")
+      ) %>% 
+    unite("full", c(author, year, title, journal, number, cites), sep = ", ")
+  }
+
+ls_art <- filter_entries(ls_art)
+ls_chapter <- filter_entries(ls_chapter)
+
+
+
+# manual entries
+
+man_ents <- tibble(
+  full = c(
+    "M Schobben, M Kienhuis, L Polerecky, in prep, New methods to detect isotopic heterogeneity with Secondary Ion Mass Spectrometry",
+    "D Korn, L Leda, F Heuer, HM Salimi, ....submitted, Baghuk Mountain (Central Iran): high-resolution stratigraphy of a continuous Central Tethyan Permian-Triassic boundary section, **Fossil record**",
+    "J Gliwa, M Wiedenbeck, M Schobben, CV Ullmann, W Kiessling, ..., submitted, Gradual sea-bottom temperature rise before the end-Permian mass extinction, **Nature Geoscience**"
+    )
+  ) 
+
+ls_art <- bind_rows(man_ents, ls_art)
+```
+
+
+----
+
+*Citations according to Google Scholar*
+
+
+## Software
+
+<div class="hangingindent">
+
+
+```{r software}
+# manual entries
+cat(
+  paste(
+    "M Schobben, 2020, point: An R package for reading, processing, and analysing raw ion count data. https://doi.org/10.5281/zenodo.3775507",
+    "</p>"
+    ),
+  paste(
+    "M Schobben, 2020, Timemachine app: Educational app for understanding past, current and future climate change. https://martinschobben.shinyapps.io/timemachine/", "</p>"
+    ),
+  sep = '</p>'
+  )
+
+```
+
+</div>
+
+
+## Book Chapters
 
 <div class="hangingindent">
 
-Schobben M. , Gravendyck J., Mangels F., Struck U., Bussert R., Kürschner W.M., Korn D., Sander P.M., Aberhan M. (2019), A comparative study of total organic carbon-$\delta^{13}C$ signatures in the Triassic–Jurassic transitional beds of the Central European Basin and western Tethys shelf seas, Newsletters on Stratigraphy (<https://doi.org/10.1127/nos/2019/0499>).
+
+```{r chapter}
+
+cat(paste(ls_chapter$full, "</p>"), sep = '</p>')
+
+```
+
 </div>
+
+## Journals
 
 <div class="hangingindent">
 
-Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (2019). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds  Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).
+
+```{r arts}
+
+cat(paste(ls_art$full, "</p>"), sep = '</p>')
+
+```
 
 </div>
-
-
-
-
----
-
-<h2 style="text-align:center;">
-2018
-</h2> 
-
-<div class="hangingindent">
-
-Kiessling, W., Schobben, M., Ghaderi, A., Hairapetian, V., Leda, L., Korn, D. 2018. Pre–mass extinction decline of latest Permian ammonoids. Geology (<https://doi.org/10.1130/G39866.1>)
-</div>
-
-
-
----
-
-<h2 style="text-align:center;">
-2017
-</h2> 
-
-<div class="hangingindent">
-
-Schobben, M., Van De Velde, S., Gliwa, J., Leda, L., Korn, D., Struck, U., Ullmann, C.V., Hairapetian, V., Ghaderi, A.,Korte, C., Newton, R. J., Poulton, S. W. and Wignall, P. B. 2017b. Latest Permian carbonate-carbon isotope variability traces heterogeneous organic carbon accumulation and authigenic carbonate formation. Climate of the Past 13, 1635--1659 (<https://doi.org/10.5194/cp-13-1635-2017>). 
-
-</div>
-
-<div class="hangingindent">
-
-Schobben, M., Stebbins, A., Algeo, T.J., Strauss, H., Leda, L., Haas, J., Struck, U., Korn, D., Korte, C., 2017a. Volatile earliest Triassic sulfur cycle: A consequence of persistent low seawater sulfate concentrations and a high sulfur cycle turnover rate?, Palaeogeography, Palaeoclimatology, Palaeoecology 486, 74--85, (<http://dx.doi.org/10.1016/j.palaeo.2017.02.025>).
-
-</div>
-
----
-
-<h2 style="text-align:center;">
-2016
-</h2> 
-
-<div class="hangingindent">
-Schobben, M., Ullmann, C.V., Leda, L., Korn, D., Struck, U., Reimold, W.U., Ghaderi, A., Algeo, T.J. Korte, C., 2016. Discerning primary versus diagenetic signals in carbonate carbon and oxygen isotope records: An example from the Permian-Triassic boundary of Iran, Chemical Geology 422, 94--107, (<http://dx.doi.org/10.1016/j.chemgeo.2015.12.013>). 
-</div>
-
-<div class="hangingindent">
-Korn, D., Ghaderi, A., Leda, L., Schobben, M., Ashouri, A.R., 2016. The ammonoids from the Late Permian Paratirolites Limestone of Julfa (East Azerbaijan, Iran). Journal of Systematic Palaeontology 15, 841--890, (<http://dx.doi.org/10.1080/14772019.2015.1119211>).
-</div>
-
-<div class="hangingindent">
-Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2016. Eutrophication, microbial-sulfate reduction and mass extinctions, Comparative and Integrative Biology 9, 1--9, (<http://dx.doi.org/10.1080/19420889.2015.1115162>). 
-</div>
-
----
-
-<h2 style="text-align:center;">
-2015
-</h2> 
-
-<div class="hangingindent">
-Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2015. Flourishing ocean drives the end-Permian marine mass extinction. Proc Natl. Acad. Sci. U.S.A. 112, 10298--10303, (<http://pnas.org/cgi/doi/10.1073/pnas.1503755112>). 
-</div>
-
----
-
-<h2 style="text-align:center;">
-2014
-</h2>
-
-<div class="hangingindent">
-Schobben, M., Joachimski, M. M., Korn, D., Leda, L., Korte, C., 2014. Palaeotethys seawater temperature rise and an intensified hydrological cycle following the end-Permian mass extinction, Gondwana Research 26, 675--683, (<http://dx.doi.org/10.1016/j.gr.2013.07.019>). 
-</div>
-
-<div class="hangingindent">
-Ghaderi, A., Leda, L., Schobben, M., Korn, D., Ashouri, A. R., 2014. High-resolution stratigraphy of the Changhsingian (Late Permian) successions of NW Iran and the Transcaucasus based on lithological features, conodonts and ammonoids, Fossil Record 17, 41--57, (<http://www.foss-rec.net/17/41/2014/>). 
-</div>
-
----
-
-<h2 style="text-align:center;">
-2013
-</h2>
-
-
-<div class="hangingindent">
-Hillebrandt, A.v., Krystyn, L., Kuerschner, W. M., Bonis, N. R., Ruhl, M., Richoz, S., Schobben, M., Urlichs, M., Bown, P. R., Kment, K., McRoberts, C. A., Simms, M., Tomašových, A., 2013. The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic system at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria), Episodes 36(3), 162--198, (<http://www.episodes.org/index.php/epi/article/view/59404>). 
-</div>
-
-<br>
-<br>
-<br>

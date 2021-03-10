@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -23,6 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <html>
 
 <head>
@@ -43,6 +44,15 @@
 
 
 </html>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -74,11 +84,10 @@ h6 {
 }
 </style>
 
+
 <link rel="stylesheet" href="hanging.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -92,7 +101,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -197,8 +205,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -243,6 +249,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -255,48 +262,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -310,6 +278,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -345,8 +319,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -361,6 +333,16 @@ div.tocify {
 }
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -424,77 +406,98 @@ div.tocify {
 
 
 <hr />
-<h2 style="text-align:center;">
-2019
-</h2>
+<p><em>Citations according to Google Scholar</em></p>
+<div id="software" class="section level2">
+<h2>Software</h2>
 <div class="hangingindent">
-<p>Schobben M. , Gravendyck J., Mangels F., Struck U., Bussert R., Kürschner W.M., Korn D., Sander P.M., Aberhan M. (2019), A comparative study of total organic carbon-<span class="math inline">\(\delta^{13}C\)</span> signatures in the Triassic–Jurassic transitional beds of the Central European Basin and western Tethys shelf seas, Newsletters on Stratigraphy (<a href="https://doi.org/10.1127/nos/2019/0499" class="uri">https://doi.org/10.1127/nos/2019/0499</a>).</p>
+M Schobben, 2020, point: An R package for reading, processing, and analysing raw ion count data. <a href="https://doi.org/10.5281/zenodo.3775507" class="uri">https://doi.org/10.5281/zenodo.3775507</a>
+</p>
+</p>
+M Schobben, 2020, Timemachine app: Educational app for understanding past, current and future climate change. <a href="https://martinschobben.shinyapps.io/timemachine/" class="uri">https://martinschobben.shinyapps.io/timemachine/</a>
+</p>
 </div>
+</div>
+<div id="book-chapters" class="section level2">
+<h2>Book Chapters</h2>
 <div class="hangingindent">
-<p>Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (2019). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).</p>
+M Schobben, F Heuer, M Tietje, A Ghaderi, D Korn, C Korte, PB Wignall, 2018, Chemostratigraphy Across the Permian‐Triassic Boundary: The Effect of Sampling Strategies on Carbonate Carbon Isotope Stratigraphic Markers, <strong>Chemostratigraphy Across Major Chronological Boundaries</strong>, 159-181, (citations: 4)
+</p>
 </div>
-<hr />
-<h2 style="text-align:center;">
-2018
-</h2>
+</div>
+<div id="journals" class="section level2">
+<h2>Journals</h2>
 <div class="hangingindent">
-<p>Kiessling, W., Schobben, M., Ghaderi, A., Hairapetian, V., Leda, L., Korn, D. 2018. Pre–mass extinction decline of latest Permian ammonoids. Geology (<a href="https://doi.org/10.1130/G39866.1" class="uri">https://doi.org/10.1130/G39866.1</a>)</p>
+M Schobben, M Kienhuis, L Polerecky, in prep, New methods to detect isotopic heterogeneity with Secondary Ion Mass Spectrometry
+</p>
+</p>
+D Korn, L Leda, F Heuer, HM Salimi, ….submitted, Baghuk Mountain (Central Iran): high-resolution stratigraphy of a continuous Central Tethyan Permian-Triassic boundary section, <strong>Fossil record</strong>
+</p>
+</p>
+J Gliwa, M Wiedenbeck, M Schobben, CV Ullmann, W Kiessling, …, submitted, Gradual sea-bottom temperature rise before the end-Permian mass extinction, <strong>Nature Geoscience</strong>
+</p>
+</p>
+J Gliwa, A Ghaderi, L Leda, M Schobben, S Tomás, WJ Foster, MB Forel, …, 2020, Aras Valley (northwest Iran): high-resolution stratigraphy of a continuous central Tethyan Permian–Triassic boundary section, <strong>Fossil Record</strong>, 23 (1), 33-69, (citations: 4)
+</p>
+</p>
+J Gravendyck, M Schobben, JB Bachelier, WM Kürschner, 2020, Macroecological patterns of the terrestrial vegetation history during the end-Triassic biotic crisis in the central European Basin: A palynological study of the Bonenburg …, <strong>Global and Planetary Change</strong>, 194, 103286, (citations: 2)
+</p>
+</p>
+B van de Schootbrugge, CMH van der Weijst, TP Hollaar, M Vecoli, M Schobben, 2020, Catastrophic soil loss associated with end-Triassic deforestation, <strong>Earth-Science Reviews</strong>, 103332, (citations: 2)
+</p>
+</p>
+M Schobben, WJ Foster, ARN Sleveland, V Zuchuat, HH Svensen, …, 2020, A nutrient control on marine anoxia during the end-Permian mass extinction, <strong>Nature Geoscience</strong>, 13 (9), 640-646, (citations: 2)
+</p>
+</p>
+M Tietje, MO Rödel, M Schobben, 2020, The effect of geographic range and climate on extinction risk in the deep-time amphibian fossil record, <strong>Palaeogeography, Palaeoclimatology, Palaeoecology</strong>, 537, 109414, (citations: 0)
+</p>
+</p>
+M Schobben, B Van De Schootbrugge, PB Wignall, 2019, Interpreting the carbon isotope record of mass extinctions, <strong>Elements</strong>, 15(5), (citations: 11)
+</p>
+</p>
+M Schobben, J Gravendyck, F Mangels, U Struck, R Bussert, …, 2019, A comparative study of total organic carbon-δ13C signatures in the Triassic–Jurassic transitional beds of the Central European Basin and western Tethys shelf seas, <strong>Newsletters on Stratigraphy</strong>, 52 (4), 461-486, (citations: 5)
+</p>
+</p>
+M Schobben, B Van De Schootbrugge, 2019, Increased stability in carbon isotope records reflects emerging complexity of the biosphere, <strong>Frontiers in Earth Science</strong>, 7, 87, (citations: 5)
+</p>
+</p>
+W Kiessling, M Schobben, A Ghaderi, V Hairapetian, L Leda, D Korn, 2018, Pre–mass extinction decline of latest Permian ammonoids, <strong>Geology</strong>, 46 (3), 283-286, (citations: 19)
+</p>
+</p>
+M Schobben, S Velde, J Gliwa, L Leda, D Korn, U Struck, CV Ullmann, …, 2017, Latest Permian carbonate carbon isotope variability traces heterogeneous organic carbon accumulation and authigenic carbonate formation, <strong>Climate of the Past</strong>, 13 (11), 1635-1659, (citations: 15)
+</p>
+</p>
+M Schobben, A Stebbins, TJ Algeo, H Strauss, L Leda, J Haas, U Struck, …, 2017, Volatile earliest Triassic sulfur cycle: A consequence of persistent low seawater sulfate concentrations and a high sulfur cycle turnover rate?, <strong>Palaeogeography, Palaeoclimatology, Palaeoecology</strong>, 486, 74-85, (citations: 12)
+</p>
+</p>
+M Schobben, CV Ullmann, L Leda, D Korn, U Struck, WU Reimold, …, 2016, Discerning primary versus diagenetic signals in carbonate carbon and oxygen isotope records: An example from the Permian–Triassic boundary of Iran, <strong>Chemical Geology</strong>, 422, 94-107, (citations: 34)
+</p>
+</p>
+M Schobben, A Stebbins, A Ghaderi, H Strauss, D Korn, C Korte, 2016, Eutrophication, microbial-sulfate reduction and mass extinctions, <strong>Communicative and integrative biology</strong>, 9 (1), e1115162, (citations: 16)
+</p>
+</p>
+D Korn, A Ghaderi, L Leda, M Schobben, AR Ashouri, 2016, The ammonoids from the Late Permian Paratirolites Limestone of Julfa (East Azerbaijan, Iran), <strong>Journal of Systematic Palaeontology</strong>, 14 (10), 841-890, (citations: 12)
+</p>
+</p>
+M Schobben, A Stebbins, A Ghaderi, H Strauss, D Korn, C Korte, 2015, Flourishing ocean drives the end-Permian marine mass extinction, <strong>Proceedings of the National Academy of Sciences</strong>, 112 (33), 10298-10303, (citations: 60)
+</p>
+</p>
+M Schobben, MM Joachimski, D Korn, L Leda, C Korte, 2014, Palaeotethys seawater temperature rise and an intensified hydrological cycle following the end-Permian mass extinction, <strong>Gondwana Research</strong>, 26 (2), 675-683, (citations: 92)
+</p>
+</p>
+A Ghaderi, L Leda, M Schobben, D Korn, AR Ashouri, 2014, High-resolution stratigraphy of the Changhsingian (Late Permian) successions of NW Iran and the Transcaucasus based on lithological features, conodonts and ammonoids, <strong>Fossil record</strong>, 17 (1), 41-57, (citations: 38)
+</p>
+</p>
+AV Hillebrandt, L Krystyn, WM Kürschner, NR Bonis, M Ruhl, S Richoz, M Schobben, 2013, The global stratotype sections and point (GSSP) for the base of the Jurassic System at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria), <strong>Episodes</strong>, 36 (3), 162-198, (citations: 102)
+</p>
 </div>
-<hr />
-<h2 style="text-align:center;">
-2017
-</h2>
-<div class="hangingindent">
-<p>Schobben, M., Van De Velde, S., Gliwa, J., Leda, L., Korn, D., Struck, U., Ullmann, C.V., Hairapetian, V., Ghaderi, A.,Korte, C., Newton, R. J., Poulton, S. W. and Wignall, P. B. 2017b. Latest Permian carbonate-carbon isotope variability traces heterogeneous organic carbon accumulation and authigenic carbonate formation. Climate of the Past 13, 1635–1659 (<a href="https://doi.org/10.5194/cp-13-1635-2017" class="uri">https://doi.org/10.5194/cp-13-1635-2017</a>).</p>
 </div>
-<div class="hangingindent">
-<p>Schobben, M., Stebbins, A., Algeo, T.J., Strauss, H., Leda, L., Haas, J., Struck, U., Korn, D., Korte, C., 2017a. Volatile earliest Triassic sulfur cycle: A consequence of persistent low seawater sulfate concentrations and a high sulfur cycle turnover rate?, Palaeogeography, Palaeoclimatology, Palaeoecology 486, 74–85, (<a href="http://dx.doi.org/10.1016/j.palaeo.2017.02.025" class="uri">http://dx.doi.org/10.1016/j.palaeo.2017.02.025</a>).</p>
-</div>
-<hr />
-<h2 style="text-align:center;">
-2016
-</h2>
-<div class="hangingindent">
-<p>Schobben, M., Ullmann, C.V., Leda, L., Korn, D., Struck, U., Reimold, W.U., Ghaderi, A., Algeo, T.J. Korte, C., 2016. Discerning primary versus diagenetic signals in carbonate carbon and oxygen isotope records: An example from the Permian-Triassic boundary of Iran, Chemical Geology 422, 94–107, (<a href="http://dx.doi.org/10.1016/j.chemgeo.2015.12.013" class="uri">http://dx.doi.org/10.1016/j.chemgeo.2015.12.013</a>).</p>
-</div>
-<div class="hangingindent">
-<p>Korn, D., Ghaderi, A., Leda, L., Schobben, M., Ashouri, A.R., 2016. The ammonoids from the Late Permian Paratirolites Limestone of Julfa (East Azerbaijan, Iran). Journal of Systematic Palaeontology 15, 841–890, (<a href="http://dx.doi.org/10.1080/14772019.2015.1119211" class="uri">http://dx.doi.org/10.1080/14772019.2015.1119211</a>).</p>
-</div>
-<div class="hangingindent">
-<p>Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2016. Eutrophication, microbial-sulfate reduction and mass extinctions, Comparative and Integrative Biology 9, 1–9, (<a href="http://dx.doi.org/10.1080/19420889.2015.1115162" class="uri">http://dx.doi.org/10.1080/19420889.2015.1115162</a>).</p>
-</div>
-<hr />
-<h2 style="text-align:center;">
-2015
-</h2>
-<div class="hangingindent">
-<p>Schobben, M., Stebbins, A., Ghaderi, A., Strauss, H., Korn, D., Korte, C., 2015. Flourishing ocean drives the end-Permian marine mass extinction. Proc Natl. Acad. Sci. U.S.A. 112, 10298–10303, (<a href="http://pnas.org/cgi/doi/10.1073/pnas.1503755112" class="uri">http://pnas.org/cgi/doi/10.1073/pnas.1503755112</a>).</p>
-</div>
-<hr />
-<h2 style="text-align:center;">
-2014
-</h2>
-<div class="hangingindent">
-<p>Schobben, M., Joachimski, M. M., Korn, D., Leda, L., Korte, C., 2014. Palaeotethys seawater temperature rise and an intensified hydrological cycle following the end-Permian mass extinction, Gondwana Research 26, 675–683, (<a href="http://dx.doi.org/10.1016/j.gr.2013.07.019" class="uri">http://dx.doi.org/10.1016/j.gr.2013.07.019</a>).</p>
-</div>
-<div class="hangingindent">
-<p>Ghaderi, A., Leda, L., Schobben, M., Korn, D., Ashouri, A. R., 2014. High-resolution stratigraphy of the Changhsingian (Late Permian) successions of NW Iran and the Transcaucasus based on lithological features, conodonts and ammonoids, Fossil Record 17, 41–57, (<a href="http://www.foss-rec.net/17/41/2014/" class="uri">http://www.foss-rec.net/17/41/2014/</a>).</p>
-</div>
-<hr />
-<h2 style="text-align:center;">
-2013
-</h2>
-<div class="hangingindent">
-<p>Hillebrandt, A.v., Krystyn, L., Kuerschner, W. M., Bonis, N. R., Ruhl, M., Richoz, S., Schobben, M., Urlichs, M., Bown, P. R., Kment, K., McRoberts, C. A., Simms, M., Tomašových, A., 2013. The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic system at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria), Episodes 36(3), 162–198, (<a href="http://www.episodes.org/index.php/epi/article/view/59404" class="uri">http://www.episodes.org/index.php/epi/article/view/59404</a>).</p>
-</div>
-<p><br> <br> <br></p>
 
 <html>
 
 
 <div style="background-color:black;color:white;padding:20px;">
 <p tyle="text-align:center;">
-2019 Martin Schobben  
+2021 Martin Schobben  
 </p>
 </div>
 
@@ -511,13 +514,56 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
