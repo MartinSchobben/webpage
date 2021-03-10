@@ -9,10 +9,10 @@ output:
 ---
 
 <p style="text-align:justify;">
-I am a postodoctoral researcher at [Utrecht University](https://www.uu.nl/staff/manschobben). 
+I am a postdoctoral researcher at [Utrecht University](https://www.uu.nl/staff/manschobben). 
 </p>
 
-My current research profile encompasses three main areas of interest: 
+My current research profile encompasses several research interests: 
 
 * [Carbonate diagenesis and stratigraphy](https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy)
 
@@ -23,19 +23,14 @@ My current research profile encompasses three main areas of interest:
 
 ---
 
-**New publications: AGU Geophysical Monograph series and Newsletters on Stratigraphy!**
+**New updates to point R package for ion count statistics are pending along with a preprint detailing the methods of the package**
 
 <div class="hangingindent">
 
-Schobben M. , Gravendyck J., Mangels F., Struck U., Bussert R., Kürschner W.M., Korn D., Sander P.M., Aberhan M. (2019), A comparative study of total organic carbon-$\delta^{13}C$ signatures in the Triassic–Jurassic transitional beds of the Central European Basin and western Tethys shelf seas, Newsletters on Stratigraphy (<https://doi.org/10.1127/nos/2019/0499>).
-
-</div>
-
-<div class="hangingindent">
-
-Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (2019). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds  Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).
+M Schobben, 2020, point: An R package for reading, processing, and analysing raw ion count data. https://doi.org/10.5281/zenodo.3775507
 
 
+Check the webpage: https://martinschobben.github.io/point/ for the documentation.
 
 </div>
 

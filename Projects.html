@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -23,6 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <html>
 
 <head>
@@ -43,6 +44,15 @@
 
 
 </html>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -74,11 +84,10 @@ h6 {
 }
 </style>
 
+
 <link rel="stylesheet" href="TOC_edited.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -92,7 +101,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -197,8 +205,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -243,6 +249,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -255,48 +262,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -310,6 +278,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -345,8 +319,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -361,6 +333,16 @@ div.tocify {
 }
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -424,8 +406,7 @@ div.tocify {
 
 
 <hr />
-<h2 style="text-align:center;" , title="diagenesis&gt;">
-Carbonate diagenesis and stratigraphy
+&lt;h2 style=“text-align:center;”, title="diagenesis&gt; Carbonate diagenesis and stratigraphy
 </h2>
 <p style="text-align:center;">
 <i> <strong>What can we learn about rock chronology by studying the carbon isotope composition of rock?</strong> </i>
@@ -452,10 +433,7 @@ Carbon isotope scatter at confined centimetre stratigraphic scale appears to rep
 This study might be perceived as negatively impacting our capability of constraining the chronology of ancient sediment successions. However, I could show that such carbon isotope records still contain a distinct primary isotope imprint. In addition, the exercise shows that this chemical record contains more information besides marine chemistry, it also covers biological contributions from sediment dwelling microbes. These organisms are important geobiological agents of the global carbon cycle.
 </p>
 <p>Click <a href="https://github.com/MartinSchobben/carbonate">here</a> for the R scripts and data used in these studies, to recreate figures and models.</p>
-<div class="figure">
-<img src="/home/amandus/webpage/CarbDia.png" />
-
-</div>
+<p><img src="/home/amandus/webpage/CarbDia.png" /></p>
 <p style="text-align:justify;">
 <font size="2"><i><br />
 The cartoon sketches the two opposing scenarios; a pre-extinction ocean with benthic communities mixing the upper layer of sediment causing organic matter to be evenly dispersed, and the post-extinction situation were sediment are less mixed due to the absence of metazoans (artwork by Mark Schobben; <a href="http://cyarco.com" class="uri">http://cyarco.com</a>) </i> </font>
@@ -542,7 +520,7 @@ The Calvin Cycle is part of the light-independent biochemical reactions that gov
 <p>11. L. W. Alvarez, W. Alvarez, F. Asaro, H. V. Michel, Extraterrestrial cause for the cretaceous-tertiary extinction. <em>Science (New York, N.Y.)</em>. <strong>208</strong>, 1095–1108 (1980).</p>
 </div>
 <div id="ref-Hsu1985">
-<p>12. K. Hsü, J. McKenzie, in <em>The carbon cycle and atmospheric co2: Natural variations archean to present</em>, E. Sund-Quist, W. Broecker, Eds. (American Geophysical Union, Washington, D. C, 1985), pp. 487–492.</p>
+<p>12. K. J. Hsü, J. A. McKenzie, in <em>The carbon cycle and atmospheric co2: Natural variations archean to present</em>, E. T. Sund-Quist, W. S. Broecker, Eds. (American Geophysical Union, Washington, D. C, 1985), pp. 487–492.</p>
 </div>
 <div id="ref-Renne2013">
 <p>13. P. R. Renne <em>et al.</em>, Time scales of critical events around the Cretaceous-Paleogene boundary. <em>Science</em>. <strong>339</strong>, 684–7 (2013).</p>
@@ -554,7 +532,7 @@ The Calvin Cycle is part of the light-independent biochemical reactions that gov
 <p>15. P. B. Wignall, R. J. Twitchett, Oceanic anoxia and the End Permian mass extinction. <em>Science</em>. <strong>272</strong>, 1155–1158 (1996).</p>
 </div>
 <div id="ref-Meyer2008">
-<p>16. K. Meyer, L. Kump, A. Ridgwell, Biogeochemical controls on photic-zone euxinia during the end-Permian mass extinction. <em>Geology</em>. <strong>36</strong>, 747 (2008).</p>
+<p>16. K. M. Meyer, L. R. Kump, A. Ridgwell, Biogeochemical controls on photic-zone euxinia during the end-Permian mass extinction. <em>Geology</em>. <strong>36</strong>, 747 (2008).</p>
 </div>
 <div id="ref-Schobben2015">
 <p>17. M. Schobben <em>et al.</em>, Flourishing ocean drives the end-Permian marine mass extinction. <em>Proceedings of the National Academy of Sciences</em>. <strong>112</strong>, 10298–10303 (2015).</p>
@@ -596,7 +574,7 @@ The Calvin Cycle is part of the light-independent biochemical reactions that gov
 
 <div style="background-color:black;color:white;padding:20px;">
 <p tyle="text-align:center;">
-2019 Martin Schobben  
+2021 Martin Schobben  
 </p>
 </div>
 
@@ -613,13 +591,56 @@ The Calvin Cycle is part of the light-independent biochemical reactions that gov
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

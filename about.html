@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -20,6 +20,7 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <html>
 
 <head>
@@ -40,6 +41,15 @@
 
 
 </html>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -72,9 +82,8 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
+
 
 <style type = "text/css">
 .main-container {
@@ -88,7 +97,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -193,8 +201,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -239,6 +245,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -251,20 +258,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -323,10 +327,7 @@ $(document).ready(function () {
 My research over the last years was targeted at critical events in Earth History associated with biodiversity decline and ecosystem stress, a.k.a. mass extinctions. To perform my research, I visited some remote areas in Iran to sample rock layers containing traces of the greatest biotic disturbance of the last 500 million year. The investigation of this mass extinction event challenged me to combine various Earth science disciplines: sedimentology, (isotope)geochemistry and geomicrobiology. Through this I developed a particular interest to the interaction of organisms with their environment and associated feedbacks that link to the evolution of life, biogeochemical cycles and climate. Important accomplishments on these topics, developed during my PhD, are a bio-apatite oxygen isotope record and a combined carbonate-associated sulfate-S and -O isotope record covering the Permian-Triassic boundary transition. These results are interpreted to reflect dramatic seawater warming and increased primary productivity, in turn, linked to an increased areal extend of marine anoxic regions, unfolding as a feedback from the Earth system. Recently, I have focused on developing methodological strategies to reliably read biological signatures from stable isotope records by performing C isotope geochemical analysis on multiple components of the whole rock. This approach relied on statistical data processing and numerical model computations to underline the most salient features, e.g., by sub-sampling and smoothing techniques, and to quantify fluxes, thereby discerning the most probable processes governing the observed isotope trends, by use of biogeochemical box-models.
 </p>
 <p><br> <br> <br></p>
-<div class="figure">
-<img src="Arasvalley.png" />
-
-</div>
+<p><img src="Arasvalley.png" /></p>
 <p style="text-align:justify;">
 <font size="2"><br />
 The Permian–Triassic boundary section at Aras Valley (NW Iran) on the foreground, the river Aras (or Araxes) which is the border between Azerbaijan and Iran. In the background one can see the Dorasham 2 section on Azerbaijan territory. </font>
@@ -338,7 +339,7 @@ The Permian–Triassic boundary section at Aras Valley (NW Iran) on the foregrou
 
 <div style="background-color:black;color:white;padding:20px;">
 <p tyle="text-align:center;">
-2019 Martin Schobben  
+2021 Martin Schobben  
 </p>
 </div>
 
@@ -353,7 +354,7 @@ The Permian–Triassic boundary section at Aras Valley (NW Iran) on the foregrou
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -361,6 +362,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -23,6 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <html>
 
 <head>
@@ -43,6 +44,15 @@
 
 
 </html>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -74,11 +84,10 @@ h6 {
 }
 </style>
 
+
 <link rel="stylesheet" href="TOC_edited2.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -92,7 +101,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -197,8 +205,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -243,6 +249,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -255,48 +262,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -310,6 +278,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -345,8 +319,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -361,6 +333,16 @@ div.tocify {
 }
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -428,7 +410,13 @@ div.tocify {
 Research experience
 </h1>
 <h2 style="text-align:left;">
-2016
+2018–present
+</h2>
+<p><strong>Utrecht University</strong></p>
+<p>Project supervisor: Bas van de Schootbrugge</p>
+<p>Project title: Glendonites as tracers of methane generation and oxidation in Mesozoic polar seas</p>
+<h2 style="text-align:left;">
+2016–2018
 </h2>
 <p><strong>University of Leeds - DFG Research Fellowship</strong></p>
 <p>Hosts: Prof. Simon Poulton, Dr. Robert Newton and Prof. Paul Wignall</p>
@@ -479,73 +467,20 @@ Education
 </h2>
 <p><strong>Utrecht University</strong></p>
 <p>Study of Biogeology</p>
-<p>Degree: Master of Science, GPA 3.74</p>
+<p>Degree: Master of Science</p>
 <h2 style="text-align:left;">
 2005 – 2009
 </h2>
 <p><strong>Utrecht University</strong></p>
 <p>Study of Earth Sciences</p>
-<p>Degree: Bachelor of Science, GPA 3.00</p>
-<hr />
-<h1 style="text-align:center;">
-Skills and social commitment
-</h1>
-<h2 style="text-align:left;">
-2013 – 2015
-</h2>
-<p>PhD representative Museum für Naturkunde Berlin</p>
-<hr />
-<h1 style="text-align:center;">
-Languages
-</h1>
-<ul>
-<li>Dutch (first language)</li>
-<li>Englisch (business fluent)</li>
-<li>German (business fluent)</li>
-<li>French (basic knowledge)</li>
-</ul>
-<hr />
-<h1 style="text-align:center;">
-Analytical skills
-</h1>
-<p>Wet-chemical treatment of sediment samples as preparation for isotope measurements on organic and inorganic components, iron speciation and Chromium-reducible sulfur-extraction</p>
-<p>Experience with SEM imaging, Raman spectroscopy, EA, MS, ICP-OES, XRF, AAS and SIMS (GFZ Helmholtz-Zentrum Potsdam)</p>
-<hr />
-<h1 style="text-align:center;">
-Reviewer duties
-</h1>
-<p>Palaeo3 (Palaeogeography, Palaeoclimatology, Palaeoecology), Global and Planetary Change, Geoscience Frontiers, Science, Canadian Journal of Earth Sciences, Geochimica et Cosmochimica Acta, Geological Society of America Bulletin.</p>
-<hr />
-<h1 style="text-align:center;">
-Grants
-</h1>
-<p>DFG Research Fellowship: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction (PHoSPhoR)</p>
-<p>MfN Innovationsfond (Museum für Naturkunde Berlin, institute internal grant): SIMS in oxygen isotope paleothermometry based on conodont apatite</p>
-<hr />
-<h1 style="text-align:center;">
-IT skills
-</h1>
-<p><strong>Advanced knowledge</strong></p>
-<ul>
-<li><p>Windows, Linux and OSX</p></li>
-<li><p>Programming language R (Data visualization, statistics and biogeochemical modeling)</p></li>
-<li><p>Microsoft Office, Libre Office and LATEX</p></li>
-<li><p>Reference managers Mendeley and EndNote</p></li>
-<li><p>Adobe Illustrator and Inkscape</p></li>
-</ul>
-<p></br></p>
-<p><strong>Basic knowledge</strong></p>
-<ul>
-<li>Image editing with Photoshop</li>
-</ul>
-<p></br> </br> </br></p>
+<p>Degree: Bachelor of Science</p>
 
 <html>
 
 
 <div style="background-color:black;color:white;padding:20px;">
 <p tyle="text-align:center;">
-2019 Martin Schobben  
+2021 Martin Schobben  
 </p>
 </div>
 
@@ -562,13 +497,56 @@ IT skills
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

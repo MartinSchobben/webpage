@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -20,6 +20,7 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <html>
 
 <head>
@@ -40,6 +41,15 @@
 
 
 </html>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -71,11 +81,10 @@ h6 {
 }
 </style>
 
+
 <link rel="stylesheet" href="hanging.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -89,7 +98,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -194,8 +202,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -240,6 +246,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -252,20 +259,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -341,21 +345,19 @@ $(document).ready(function () {
 
 
 <p style="text-align:justify;">
-I am a postodoctoral researcher at <a href="https://www.uu.nl/staff/manschobben">Utrecht University</a>.
+I am a postdoctoral researcher at <a href="https://www.uu.nl/staff/manschobben">Utrecht University</a>.
 </p>
-<p>My current research profile encompasses three main areas of interest:</p>
+<p>My current research profile encompasses several research interests:</p>
 <ul>
 <li><p><a href="https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy">Carbonate diagenesis and stratigraphy</a></p></li>
 <li><p><a href="https://martinschobben.github.io/webpage/Projects.html#_strangelove_oceans_vs_living_oceans_">Strangelove oceans vs. living oceans</a></p></li>
 <li><p><a href="https://martinschobben.github.io/webpage/Projects.html#_isotope_palaeontology_">Isotope palaeontology</a></p></li>
 </ul>
 <hr />
-<p><strong>New publications: AGU Geophysical Monograph series and Newsletters on Stratigraphy!</strong></p>
+<p><strong>New updates to point R package for ion count statistics are pending along with a preprint detailing the methods of the package</strong></p>
 <div class="hangingindent">
-<p>Schobben M. , Gravendyck J., Mangels F., Struck U., Bussert R., Kürschner W.M., Korn D., Sander P.M., Aberhan M. (2019), A comparative study of total organic carbon-<span class="math inline">\(\delta^{13}C\)</span> signatures in the Triassic–Jurassic transitional beds of the Central European Basin and western Tethys shelf seas, Newsletters on Stratigraphy (<a href="https://doi.org/10.1127/nos/2019/0499" class="uri">https://doi.org/10.1127/nos/2019/0499</a>).</p>
-</div>
-<div class="hangingindent">
-<p>Schobben, M., Heuer, F., Tietje, M., Ghaderi, A., Korn, D., Korte, C., Wignall, P.B., (2019). Chemostratigraphy across the Permian-Triassic Boundary: The Effect of Sampling Strategies on Carbonate-carbon Isotope Stratigraphic Markers, in Chemostratigraphy across major chronostratigraphical boundaries, eds Sial, A.N., Gaucher, C., Ramkumar, M., Ferreira, V.P., AGU Geophysical Monograph series (Wiley).</p>
+<p>M Schobben, 2020, point: An R package for reading, processing, and analysing raw ion count data. <a href="https://doi.org/10.5281/zenodo.3775507" class="uri">https://doi.org/10.5281/zenodo.3775507</a></p>
+<p>Check the webpage: <a href="https://martinschobben.github.io/point/" class="uri">https://martinschobben.github.io/point/</a> for the documentation.</p>
 </div>
 <hr />
 <p><br> <br> <br></p>
@@ -365,7 +367,7 @@ I am a postodoctoral researcher at <a href="https://www.uu.nl/staff/manschobben"
 
 <div style="background-color:black;color:white;padding:20px;">
 <p tyle="text-align:center;">
-2019 Martin Schobben  
+2021 Martin Schobben  
 </p>
 </div>
 
@@ -380,7 +382,7 @@ I am a postodoctoral researcher at <a href="https://www.uu.nl/staff/manschobben"
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -388,6 +390,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
