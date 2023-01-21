@@ -13,14 +13,23 @@
 
 <title>Martin Schobben</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <html>
 
 <head>
@@ -54,32 +63,7 @@
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 <link rel="stylesheet" href="hanging.css" type="text/css" />
@@ -91,10 +75,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -111,40 +91,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -172,7 +128,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -184,7 +140,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -195,10 +151,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -210,7 +179,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -277,7 +245,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -335,7 +303,7 @@ $(document).ready(function () {
 
 </html>
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -345,23 +313,76 @@ $(document).ready(function () {
 
 
 <p style="text-align:justify;">
-I am a postdoctoral researcher at <a href="https://www.uu.nl/staff/manschobben">Utrecht University</a>.
+I am a geoscientist who applies creative, data-driven solutions to
+answer fundamental questions about the Earth system. In addition to a
+strong affinity to data analysis and programming, I enjoy exploring
+effective ways of communicating results through the optimization of
+graphical representations. The development of solutions for the data
+management and open science are currently one of my main interests.
 </p>
-<p><a href="https://orcid.org/0000-0001-8560-0037">ORCID ID</a> </br></p>
-<p>My current research profile encompasses several research interests:</p>
-<ul>
-<li><p><a href="https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy">Carbonate diagenesis and stratigraphy</a></p></li>
-<li><p><a href="https://martinschobben.github.io/webpage/Projects.html#_strangelove_oceans_vs_living_oceans_">Strangelove oceans vs. living oceans</a></p></li>
-<li><p><a href="https://martinschobben.github.io/webpage/Projects.html#_isotope_palaeontology_">Isotope palaeontology</a></p></li>
-</ul>
+<!-- BEGIN BADGES SOCIAL -->
+<p align="center">
+<a href="https://twitter.com/MartinSchobben">
+<img src="https://img.shields.io/twitter/url?url=https://twitter.com/MartinSchobben&label=Twitter" alt="Martin Schobben's Twitter"/>
+</a> <a href="https://www.linkedin.com/in/martin-schobben-30633320a/">
+<img src="https://img.shields.io/badge/--x.svg?style=social&logo=LinkedIn&label=LinkedIn&url=null" alt="Martin Schobben's Linkdin"/>
+</a> <a href="https://orcid.org/0000-0001-8560-0037">
+<img src="https://img.shields.io/badge/--x.svg?style=social&logo=orcid&logoColor=A6CE39&label=ORCID&url=' '" alt="Martin Schobben's ORCID ID"/>
+</a>
+<a href="https://scholar.google.com/citations?user=y-t4A90AAAAJ&hl=en">
+<img src="https://img.shields.io/badge/--x.svg?style=social&logo=GoogleScholar&logoColor=4285F4&label=Google%20Scholar&url=%00" alt="Martin Schobben's Google Scholar"/>
+</a> <a href="https://github.com/MartinSchobben">
+<img src="https://img.shields.io/badge/--x.svg?style=social&logo=github&label=GitHub&message==hello" alt="Martin Schobben's GitHub"/>
+</a>
+</p>
+<!-- END BADGES SOCIAL -->
 <hr />
-<p><strong>New updates to the point R package for ion count statistics are pending along with a preprint detailing the methods of the package</strong></p>
-<div class="hangingindent">
-<p>M Schobben, 2020, point: An R package for reading, processing, and analysing raw ion count data. <a href="https://doi.org/10.5281/zenodo.3775507" class="uri">https://doi.org/10.5281/zenodo.3775507</a></p>
-<p>Check the webpage: <a href="https://martinschobben.github.io/point/" class="uri">https://martinschobben.github.io/point/</a> for the documentation.</p>
+<div id="interests" class="section level2">
+<h2>Interests</h2>
+<p>My current profile encompasses several interests:</p>
+<ul>
+<li><a href="">open science</a></li>
+<li><a href="">data management</a></li>
+<li><a href="">data visualization</a></li>
+</ul>
+<!-- * [Carbonate diagenesis and stratigraphy](https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy) -->
+<!-- * [Strangelove oceans vs. living oceans](https://martinschobben.github.io/webpage/Projects.html#_strangelove_oceans_vs_living_oceans_) -->
+<!-- * [Isotope palaeontology](https://martinschobben.github.io/webpage/Projects.html#_isotope_palaeontology_) -->
+<hr />
 </div>
+<div id="latest" class="section level2">
+<h2>Latest</h2>
+<table>
+<tr>
+<td>
+<a href="https://irods.org/trirods/">TRiRODS</a>: rirods: A first
+release of a pure R package for iRODS (Dec 2022, Chapel Hill, US) (<a
+href="https://www.youtube.com/watch?v=tZbWstlXKzE">YouTube</a>)
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://irods.org/ugm2022/">iRODS User Group Meeting</a>, 7th
+July 2022, Leuven, Towards the FAIRification of lab-data. (<a
+href="https://www.youtube.com/watch?v=nBpmkTWji-g">YouTube</a>)
+</td>
+</tr>
+<tr>
+<td>
+<div class="hangingindent">
+<p>M Schobben, 2022, point: An R package for reading, processing, and
+analysing raw ion count data. <a
+href="https://doi.org/10.5281/zenodo.3775507"
+class="uri">https://doi.org/10.5281/zenodo.3775507</a></p>
+</div>
+</td>
+</tr>
 <hr />
 <p><br> <br> <br></p>
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0"><img
+src="https://licensebuttons.net/l/by-sa/3.0/88x31.png"
+alt="licensebuttons by-sa" /></a></p>
+</div>
 
 <html>
 
@@ -374,6 +395,7 @@ I am a postdoctoral researcher at <a href="https://www.uu.nl/staff/manschobben">
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+
 
 
 
@@ -401,7 +423,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

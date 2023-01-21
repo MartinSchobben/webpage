@@ -9,38 +9,67 @@ output:
 ---
 
 <p style="text-align:justify;">
-I am a postdoctoral researcher at [Utrecht University](https://www.uu.nl/staff/manschobben). 
+I am a geoscientist who applies creative, data-driven solutions to answer fundamental questions about the Earth system. In addition to a strong affinity to data analysis and programming, I enjoy exploring effective ways of communicating results through the optimization of graphical representations. The development of solutions for the data management and open science are currently one of my main interests.
 </p>
 
-[ORCID ID](https://orcid.org/0000-0001-8560-0037)
-</br>
-
-My current research profile encompasses several research interests: 
-
-* [Carbonate diagenesis and stratigraphy](https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy)
-
-* [Strangelove oceans vs. living oceans](https://martinschobben.github.io/webpage/Projects.html#_strangelove_oceans_vs_living_oceans_)
-
-* [Isotope palaeontology](https://martinschobben.github.io/webpage/Projects.html#_isotope_palaeontology_)
-
-
----
-
-**New updates to the point R package for ion count statistics are pending along with a preprint detailing the methods of the package**
-
-<div class="hangingindent">
-
-M Schobben, 2020, point: An R package for reading, processing, and analysing raw ion count data. https://doi.org/10.5281/zenodo.3775507
-
-
-Check the webpage: https://martinschobben.github.io/point/ for the documentation.
-
-</div>
+<!-- BEGIN BADGES SOCIAL -->
+<p align="center">
+  <a href="https://twitter.com/MartinSchobben">
+    <img src="https://img.shields.io/twitter/url?url=https://twitter.com/MartinSchobben&label=Twitter" alt="Martin Schobben's Twitter"/>
+  </a>
+  <a href="https://www.linkedin.com/in/martin-schobben-30633320a/">
+    <img src="https://img.shields.io/badge/--x.svg?style=social&logo=LinkedIn&label=LinkedIn&url=null" alt="Martin Schobben's Linkdin"/>
+  </a>
+  <a href="https://orcid.org/0000-0001-8560-0037">
+    <img src="https://img.shields.io/badge/--x.svg?style=social&logo=orcid&logoColor=A6CE39&label=ORCID&url=' '" alt="Martin Schobben's ORCID ID"/>
+  </a>
+  <a href="https://scholar.google.com/citations?user=y-t4A90AAAAJ&hl=en">
+    <img src="https://img.shields.io/badge/--x.svg?style=social&logo=GoogleScholar&logoColor=4285F4&label=Google%20Scholar&url=%00" alt="Martin Schobben's Google Scholar"/>
+  </a>
+  <a href="https://github.com/MartinSchobben">
+    <img src="https://img.shields.io/badge/--x.svg?style=social&logo=github&label=GitHub&message==hello" alt="Martin Schobben's GitHub"/>
+  </a>
+</p>
+<!-- END BADGES SOCIAL -->
 
 
 ---
 
+## Interests 
+
+My current profile encompasses several interests: 
+
+ - [open science]()
+ - [data management]()
+ - [data visualization]()
+
+<!-- * [Carbonate diagenesis and stratigraphy](https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy) -->
+
+<!-- * [Strangelove oceans vs. living oceans](https://martinschobben.github.io/webpage/Projects.html#_strangelove_oceans_vs_living_oceans_) -->
+
+<!-- * [Isotope palaeontology](https://martinschobben.github.io/webpage/Projects.html#_isotope_palaeontology_) -->
+
+
+---
+
+## Latest
+
+<table>
+
+<tr><td>[TRiRODS](https://irods.org/trirods/): rirods: A first release of a pure R package for iRODS (Dec 2022, Chapel Hill, US) ([YouTube](https://www.youtube.com/watch?v=tZbWstlXKzE)) </td></tr>
+
+<tr><td>[iRODS User Group Meeting](https://irods.org/ugm2022/), 7th July 2022, Leuven, Towards the FAIRification of lab-data.  ([YouTube](https://www.youtube.com/watch?v=nBpmkTWji-g)) </td></tr>
+
+<tr><td> <div class="hangingindent">
+M Schobben, 2022, point: An R package for reading, processing, and analysing raw ion count data. https://doi.org/10.5281/zenodo.3775507
+</div> </td></tr>
+
+
+---
+
 
 <br>
 <br>
 <br>
+
+[![licensebuttons by-sa](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0)

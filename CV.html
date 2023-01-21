@@ -13,17 +13,26 @@
 
 <title>Curriculum vitae</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <html>
 
 <head>
@@ -57,32 +66,7 @@
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 <link rel="stylesheet" href="TOC_edited2.css" type="text/css" />
@@ -94,10 +78,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -114,40 +94,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -175,7 +131,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -187,7 +143,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -198,10 +154,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -213,7 +182,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -345,7 +313,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -359,7 +327,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -396,7 +364,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -405,75 +373,7 @@ div.tocify {
 </div>
 
 
-<hr />
-<h1 style="text-align:center;">
-Research experience
-</h1>
-<h2 style="text-align:left;">
-2018–present
-</h2>
-<p><strong>Utrecht University</strong></p>
-<p>Project supervisor: Bas van de Schootbrugge</p>
-<p>Project title: Glendonites as tracers of methane generation and oxidation in Mesozoic polar seas</p>
-<h2 style="text-align:left;">
-2016–2018
-</h2>
-<p><strong>University of Leeds - DFG Research Fellowship</strong></p>
-<p>Hosts: Prof. Simon Poulton, Dr. Robert Newton and Prof. Paul Wignall</p>
-<p>Project title: A PHase-Specific geochemical study of marine PRoductivity and nutrient cycling during the end-Permian mass extinction (PHoSPhoR)</p>
-<h2 style="text-align:left;">
-2015 - 2016
-</h2>
-<p><strong>Museum für Naturkunde Berlin</strong></p>
-<p>Project supervisor: Dr. Martin Aberhan</p>
-<p>Project title: Carbon isotope analysis of a new Triassic/Jurassic boundary section (Bonenburg,Germany): implications for the dynamics of environmental perturbations and faunal response across the end-Triassic mass extinction event</p>
-<p></br></p>
-<p><strong>Museum für Naturkunde Berlin and GFZ Helmholtz-Zentrum Potsdam</strong></p>
-<p>1280-HR SIMS facility operated by Dr. Michael Wiedenbeck</p>
-<p>Project title: SIMS in oxygen isotope paleothermometry based on conodont apatite</p>
-<h2 style="text-align:left;">
-2011 – 2015
-</h2>
-<p><strong>Museum für Naturkunde Berlin</strong></p>
-<p>PhD candidate with Dr. Christoph Korte and Dr. Dieter Korn</p>
-<p>Project title: The Permian-Triassic boundary and the Early Triassic in Transcaucasian pelagic sections</p>
-<h2 style="text-align:left;">
-2011
-</h2>
-<p><strong>Utrecht University</strong></p>
-<p>Internship with Dr. Lennart de Nooijer and Dr. Gert-Jan Reichart</p>
-<p>Project title: Impact of different seawater [Ca<sup>2+</sup>] on calcification in the benthic foraminifera <i>Ammoni spp.</i></p>
-<p><strong>Utrecht University</strong></p>
-<p>Graduate student with Dr. Wolfram Kürschner and Dr. Gert-Jan Reichart</p>
-<p>Project title: Marine and terrestrial proxy records of environmental changes across the Triassic-Jurrasic transition; A combined geochemical and palynological approach</p>
-<h2 style="text-align:left;">
-2009
-</h2>
-<p><strong>Utrecht University</strong></p>
-<p>Undergraduate student with Dr. Wolfram Kürschner and Dr. Frits Hilgen</p>
-<p>Project title: A high resolution palynological and carbon isotope study on the GSSP of the Triassic-Jurassic boundary in the Kuhjoch section (Austria)</p>
-<hr />
-<h1 style="text-align:center;">
-Education
-</h1>
-<h2 style="text-align:left;">
-2011 – 2015
-</h2>
-<p><strong>Freie Universität Berlin</strong></p>
-<p>Thesis title: Geochemical proxy records for climatic and environmental changes across the Permian-Triassic boundary of key sections in NW Iran</p>
-<p>Degree: PhD (Dr. rer. nat.), magna cum laude</p>
-<h2 style="text-align:left;">
-2009 – 2011
-</h2>
-<p><strong>Utrecht University</strong></p>
-<p>Study of Biogeology</p>
-<p>Degree: Master of Science</p>
-<h2 style="text-align:left;">
-2005 – 2009
-</h2>
-<p><strong>Utrecht University</strong></p>
-<p>Study of Earth Sciences</p>
-<p>Degree: Bachelor of Science</p>
+
 
 <html>
 
@@ -486,6 +386,7 @@ Education
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+
 
 
 </div>
@@ -515,7 +416,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -524,6 +425,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
