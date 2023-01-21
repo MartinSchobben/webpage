@@ -60,9 +60,7 @@ My current profile encompasses several interests:
 
 <tr><td>[iRODS User Group Meeting](https://irods.org/ugm2022/), 7th July 2022, Leuven, Towards the FAIRification of lab-data.  ([YouTube](https://www.youtube.com/watch?v=nBpmkTWji-g)) </td></tr>
 
-<tr><td> <div class="hangingindent">
-M Schobben, 2022, point: An R package for reading, processing, and analysing raw ion count data. https://doi.org/10.5281/zenodo.3775507
-</div> </td></tr>
+</table>
 
 
 ---
@@ -72,4 +70,3 @@ M Schobben, 2022, point: An R package for reading, processing, and analysing raw
 <br>
 <br>
 
-[![licensebuttons by-sa](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0)

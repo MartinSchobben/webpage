@@ -8,8 +8,8 @@ navbar:
       href: about.html
     - text: "Projects"
       href: Projects.html
-    - text: "CV"
-      href: CV.html
+    # - text: "CV"
+    #   href: CV.html
     - text: "Publications"
       href: Publications.html
     - text: "Promoted"
