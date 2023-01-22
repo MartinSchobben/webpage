@@ -17,6 +17,7 @@ navbar:
   right:
     - text: "Contact"
       href: contact.html
+      
 output:
   html_document:
     theme: spacelab
@@ -24,8 +25,4 @@ output:
     includes:
       after_body: footer.html
       in_header: header.html
-gems: 
-  - jekyll-seo-tag
-output_dir: "."
-
-
+output_dir: "docs"

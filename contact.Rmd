@@ -2,15 +2,15 @@
 title: "Contact"
 ---
 
-Utrecht University   
-Princetonlaan 8A    
-3584 CB Utrecht   
-Netherlands    
 
-email:
+<style type="text/css">
+span.protect {display:none;}
+</style>
 
-<div style="width:266px; height=52px">
-![](webmail.png) </div> 
+<p>email:
+schobbenmartin<span class="protect">somethingelse</span>`@`gmail.com
+</p>
+
 
 <br>
 <br>
