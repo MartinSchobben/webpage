@@ -11,6 +11,9 @@ on:
 
 name: website
 
+env:
+  RENV_PATHS_ROOT: ~/.local/share/renv
+  
 jobs:
   website:
     runs-on: ubuntu-latest
