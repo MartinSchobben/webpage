@@ -1,0 +1,51 @@
+---
+output: github_document
+bibliography: biblio/packages.bib
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Martin Schobben's webpage
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This is my personal webpage.
+
+## Credits
+
+```{r pkgs, echo=FALSE, message=FALSE}
+# following code for loading and writing the bibtex references for the used pkgs
+pkgs <- c("scholar", "tidyr", "dplyr", "knitr", "rmarkdown")    
+# Get the R reference
+rref <- citation()
+# Create ref key
+rref$key <- "rversion"
+knitr::write_bib(pkgs, "biblio/packages.bib", prefix = "")
+pkgs <- bibtex::read.bib("biblio/packages.bib")
+bibtex::write.bib(
+  purrr::reduce(list(rref, pkgs), append), 
+  file = "biblio/packages.bib"
+  )
+```
+
+```{r renv, echo=FALSE, message=FALSE}
+# to let it be detected by renv
+library(scholar)
+library(dplyr)
+library(tidyr)
+```
+
+The construction of my personal webpage is performed with R [@rversion] and the packages *rmarkdown* [@rmarkdown], *knitr* [@knitr]. In addition *dplyr* [@dplyr] and *tidyr* [@tidyr] have been used.
+
+Up to data Google Scholar citations are automatically updated with *scholar* [@scholar].
+
+## References
+
