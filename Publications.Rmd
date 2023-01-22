@@ -10,140 +10,43 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+# Default knitr options
 knitr::opts_chunk$set(
-  # collapse = TRUE,
-  out.width = "100%",
-  warning = FALSE, 
-  results = "asis",
-  encoding = 'UTF-8',
-  echo = FALSE
+  echo = FALSE, 
+  message = FALSE,
+  warning = FALSE,
+  dpi = 300, 
+  digits = 2,
+  results = 'asis',
+  dev = "CairoPDF"
 )
 ```
 
 
-```{r pkg, include=FALSE}
-
-invisible(lapply(list("scholar", "tidyverse", "kableExtra", "knitr"), library, character.only = TRUE)) # get my profile Google scholar
-
+```{r pkg, include=FALSE, message=FALSE}
+# get my profile Google scholar
+lapply(list("scholar", "tidyr", "dplyr"), library, character.only = TRUE) 
 ```
 
+------
+
+## Publications
 
 
 ```{r publist}
-ls_pubs <- get_publications("y-t4A90AAAAJ&hl") 
-ls_chapter <- ls_pubs %>% filter(str_detect(journal, "Chemostratigraphy"))
-ls_art <- ls_pubs %>% filter(!str_detect(journal, "Chemostratigraphy"))
-  
-filter_entries <- function(df){
-  
-  df %>%   
-    mutate(number = if_else(str_detect(journal, "Elements"), "15(5)", number),
-           number = na_if(number, "")) %>%
-    filter(
-      !str_detect(number, "Meeting"),
-      !str_detect(number, "Congress"),
-      !str_detect(journal, "Abstracts"),
-      !str_detect(journal, "EGU"),
-      !str_detect(journal, "IGCP")
-           ) %>%
-    drop_na(number) %>%
-    mutate(
-      journal = 
-           if_else(
-             str_detect(journal, "&"), 
-             str_replace(journal, "&", "and"), 
-             journal
-             ),
-      journal = 
-           if_else(
-             str_detect(journal, "Elements"), 
-             "Elements", 
-             journal
-             ),
-      author = 
-             if_else(
-               str_detect(author, "Schobben"), 
-               author, 
-               str_replace(author, "\\.\\.\\.", " M Schobben")
-               )
-      ) %>% 
-    arrange(desc(year)) %>% 
-    mutate(
-      cites = paste0("(citations: ", cites,")"),
-      journal = paste0("**", journal, "**")
-      ) %>% 
-    unite("full", c(author, year, title, journal, number, cites), sep = ", ")
-  }
-
-ls_art <- filter_entries(ls_art)
-ls_chapter <- filter_entries(ls_chapter)
-
-
-
-# manual entries
-
-man_ents <- tibble(
-  full = c(
-    "M Schobben, M Kienhuis, L Polerecky, in prep, New methods to detect isotopic heterogeneity with Secondary Ion Mass Spectrometry",
-    "D Korn, L Leda, F Heuer, HM Salimi, ....submitted, Baghuk Mountain (Central Iran): high-resolution stratigraphy of a continuous Central Tethyan Permian-Triassic boundary section, **Fossil record**",
-    "J Gliwa, M Wiedenbeck, M Schobben, CV Ullmann, W Kiessling, ..., submitted, Gradual sea-bottom temperature rise before the end-Permian mass extinction, **Nature Geoscience**"
-    )
-  ) 
-
-ls_art <- bind_rows(man_ents, ls_art)
+ls_pubs <- get_publications("y-t4A90AAAAJ&hl") |> 
+  mutate(cites = paste0("**(citations: ", cites,")**")) |> 
+  unite("full", c(author, year, title, journal, number, cites), sep = ", ")
 ```
 
 
-----
+
 
 *Citations according to Google Scholar*
 
 
-## Software
-
-<div class="hangingindent">
-
-
-```{r software}
-# manual entries
-cat(
-  paste(
-    "M Schobben, 2020, point: An R package for reading, processing, and analysing raw ion count data. https://doi.org/10.5281/zenodo.3775507",
-    "</p>"
-    ),
-  paste(
-    "M Schobben, 2020, Timemachine app: Educational app for understanding past, current and future climate change. https://martinschobben.shinyapps.io/timemachine/", "</p>"
-    ),
-  sep = '</p>'
-  )
-
-```
-
-</div>
-
-
-## Book Chapters
-
-<div class="hangingindent">
-
-
-```{r chapter}
-
-cat(paste(ls_chapter$full, "</p>"), sep = '</p>')
-
-```
-
-</div>
-
-## Journals
-
-<div class="hangingindent">
-
-
 ```{r arts}
-
-cat(paste(ls_art$full, "</p>"), sep = '</p>')
-
+cat(paste("<p class='hangingindent'>", ls_pubs$full, "</p>\\par"), sep = '\n')
 ```
 
-</div>
+

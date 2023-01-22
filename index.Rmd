@@ -4,8 +4,7 @@ description: "isotope geochemistry, palaeontology, Permian, Triassic, Earth syst
 output:
   html_document:
     includes:
-      before_body: logo.html
-    css: hanging.css
+      before_body: style/logo.html
 ---
 
 <p style="text-align:justify;">
