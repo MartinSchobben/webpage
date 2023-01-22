@@ -5,3 +5,8 @@
 .Ruserdata
 .httr-oauth
 .Renviron
+
+# derived files
+*.html
+
+#

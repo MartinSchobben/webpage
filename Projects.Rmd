@@ -45,7 +45,7 @@ This study might be perceived as negatively impacting our capability of constrai
 
 Click [here](https://github.com/MartinSchobben/carbonate) for the R scripts and data used in these studies, to recreate figures and models. 
 
-![](/home/amandus/webpage/CarbDia.png)
+![](CarbDia.png)
 
 <p style="text-align:justify;"><font size="2"><i>   
 The cartoon sketches the two opposing scenarios; a pre-extinction ocean with benthic communities mixing the upper layer of sediment causing organic matter to be evenly dispersed, and the post-extinction situation were sediment are less mixed due to the absence of metazoans (artwork by Mark Schobben;   <http://cyarco.com>)
