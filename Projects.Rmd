@@ -11,6 +11,32 @@ bibliography: biblio/library.bib
 csl: style/science.csl
 ---
 
+
+---
+
+<h2 style="text-align:center;", title="datamanagement">
+Data management</h2> 
+
+<p style="text-align:center;">
+<i>
+**Safeguarding data for the future.**
+</i>
+</p>
+
+Data management and subsequent downstream recycling of data is increasingly seen as a primer for future innovation and new discoveries. Above all, good data management practices are critical to open science and an inclusive, connected worldwide academic community—providing opportunities for developing countries that do not have the same resources for data generation as wealthy countries.
+
+Solutions for better data management infrastructures, such as formalised in the Findable, Accessible, Interoperable, and Reusable (FAIR) data guiding principles [@Wilkinson2016], are an active, yet developing field of research. Hence, researchers in every stage of their career; from beginning PhDs to a professor running a large research group, have either only limited knowledge of good data management and open science practices, or do not have the capacity to invest time and resources in familiarising themselves with current developments in this field.
+
+The task of optimizing data management infrastructures can be especially daunting for laboratories populated by a range of analytical instruments—each with their own vendor supplied software suite for data processing, analysing, and diagnostics. The wealth of commercial analytical instruments results in various data models which are not easily integrated. This so-called “vendor lock-in” further prevents transparency of the workflow from raw to analysed data.
+
+Low-level access to raw data and insights in workflows is not necessary for all scientist, but it can be important for special purpose research questions and the reproducibility of published research. On top of that, many disciplines of natural sciences rely on field observations and on-site experiments besides laboratory output. All this data should ideally be standardized, integrated, and managed at one central point throughout the life cycle from raw, analysed, published to archived data.
+
+The **integrated lab** is a solution to centralize data management of the traditional unconnected lab by collecting and harmonizing data streams from various lab instruments, and by providing open-sourced alternatives for routine analytical workflows. The tool [panacea](https://github.com/FAIReLABS/panacea) is an attempt to realize this goal.
+
+<p align="center">
+![Integrated lab solution versus traditional unconnected lab set-ups.](https://github.com/FAIReLABS/webpage/blob/master/datamanagement_infra.png?raw=true)
+</p>
+
 ---
 
 <h2 style="text-align:center;", title="diagenesis">

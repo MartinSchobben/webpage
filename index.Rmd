@@ -38,9 +38,9 @@ I am a geoscientist who applies creative, data-driven solutions to answer fundam
 
 My current profile encompasses several interests: 
 
- - [open science]()
- - [data management]()
- - [data visualization]()
+ - [open science](https://martinschobben.github.io/webpage/Projects.html)
+ - [data management](https://martinschobben.github.io/webpage/Projects.html)
+ - [data visualization](https://martinschobben.github.io/webpage/Projects.html)
 
 ---
 
