@@ -7,8 +7,8 @@ output:
     toc_depth: 2
     toc_float:
       collapsed: FALSE
-bibliography: library.bib
-csl: science.csl
+bibliography: biblio/library.bib
+csl: style/science.csl
 ---
 
 ---
@@ -45,7 +45,7 @@ This study might be perceived as negatively impacting our capability of constrai
 
 Click [here](https://github.com/MartinSchobben/carbonate) for the R scripts and data used in these studies, to recreate figures and models. 
 
-![](CarbDia.png)
+![](images/CarbDia.png)
 
 <p style="text-align:justify;"><font size="2"><i>   
 The cartoon sketches the two opposing scenarios; a pre-extinction ocean with benthic communities mixing the upper layer of sediment causing organic matter to be evenly dispersed, and the post-extinction situation were sediment are less mixed due to the absence of metazoans (artwork by Mark Schobben;   <http://cyarco.com>)
@@ -72,7 +72,7 @@ From an oceanic perspective it is often argued that the collapse of primary prod
 <p style="text-align:justify;">
 Contrary to the end-Cretaceous example, cited above, some marine biotic disturbance might have been initiated by a reversed scenario of increased primary production which perturbed the system by trigerring lethal feedbacks. For example during the end-Permian biotic crisis, adverse marine conditions associated with large areas of oxygen depleted and hydrogen sulfide enriched water are considered as main stressors for eukaryotes during this time interval[@Joachimski2001; @Wignall1996; @Meyer2008; @Schobben2015].  </p>
 
-![](Figure1.jpg)
+![](images/Figure1.jpg)
 <p style="text-align:justify;"><font size="2"><i>  
 The cartoon sketches a scenario of CO2-outgassing associated with emplacement of the Siberian Trap basalt triggering climate warming and consequential increased continental weathering by an amplified hydrological cycle but also massive destruction of vegetation. Enhanced river discharge (here depicted as a braided river system) supplies the ocean with excess nutrients. Nutrient loading of the ocean starts a vigorous carbon loop driven by microbial respiration casuing oxygen depletion and hydrogen sulfide production by aerobic and anaerobic metabolic pathways, respectively. Artwork by Mark Schobben (Figure from [Schobben et al., 2016](http://dx.doi.org/10.1080/19420889.2015.1115162)).
 </i></font></p>
@@ -107,7 +107,7 @@ Paleontologists search for fossil remains to study the biology as well as ecolog
 This geochemical approach can be taken one step further, and rests on the observation that biofilms (dense layered accumulations of highly diverse microbial communities) induce mineral precipitation. The most iconic examples are the stromatolites, which often occur as domed layered structures. Although the direct relation of these structures with microbes is still debated [@Grotzinger1999]. Nevertheless, microbial-mediated precipitates potentially provide a time-capsule of ancient microbial activity. The layered architecture of microbial mats results in strong spatial chemical gradients induced by the trajectories of extinguishing light and metabolite consumption with depth. Furthermore, metabolism (both energy yielding and energy binding) is connected with strong isotope fractionations between the reactant and product. Hence, spatially highly-resolved isotope techniques can potentially provide a means to detect such chemical gradient entrained within these mineral precipitates [@Fike2008]. In addtion, measurements on  metabolism reactant-product pairs might as well be important tracers of biological contributions to the rock geochemical record [cf. @Schobben2017].
 </p>
 
-![](CalvinCycle.png)
+![](images/CalvinCycle.png)
 <p style="text-align:justify;"><font size="2"><i>  
 The Calvin Cycle is part of the light-independent biochemical reactions that governs the synthesis of complex organic carbon molecules. The enzyme RuBisCO is central in this cycle, and, in addition, in parts an isotope fractionation which enriches the produced organic carbon molecules with the lighter C-12.
 </i></font></p>

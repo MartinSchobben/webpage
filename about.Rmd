@@ -12,7 +12,7 @@ My research over the last years was targeted at critical events in Earth History
 <br>
 <br>
 
-![](Arasvalley.png){} 
+![](images/Arasvalley.png){} 
 
 <p style="text-align:justify;"><font size="2">  
 The Permian--Triassic boundary section at Aras Valley (NW Iran) on the foreground, the river Aras (or Araxes)

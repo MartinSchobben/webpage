@@ -2,11 +2,8 @@
 title: "Publications"
 output:
   html_document:
-    css: hanging.css
-    toc: TRUE
-    toc_depth: 2
-    toc_float:
-      collapsed: FALSE
+    css: style/hanging.css
+    toc: FALSE
 ---
 
 ```{r setup, include=FALSE}
@@ -28,9 +25,7 @@ knitr::opts_chunk$set(
 lapply(list("scholar", "tidyr", "dplyr"), library, character.only = TRUE) 
 ```
 
-------
-
-## Publications
+---
 
 
 ```{r publist}
@@ -38,8 +33,6 @@ ls_pubs <- get_publications("y-t4A90AAAAJ&hl") |>
   mutate(cites = paste0("**(citations: ", cites,")**")) |> 
   unite("full", c(author, year, title, journal, number, cites), sep = ", ")
 ```
-
-
 
 
 *Citations according to Google Scholar*

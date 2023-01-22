@@ -42,22 +42,16 @@ My current profile encompasses several interests:
  - [data management]()
  - [data visualization]()
 
-<!-- * [Carbonate diagenesis and stratigraphy](https://martinschobben.github.io/webpage/Projects.html#_carbonate_diagenesis_and_stratigraphy) -->
-
-<!-- * [Strangelove oceans vs. living oceans](https://martinschobben.github.io/webpage/Projects.html#_strangelove_oceans_vs_living_oceans_) -->
-
-<!-- * [Isotope palaeontology](https://martinschobben.github.io/webpage/Projects.html#_isotope_palaeontology_) -->
-
-
 ---
 
 ## Latest
 
 <table>
 
-<tr><td>[TRiRODS](https://irods.org/trirods/): rirods: A first release of a pure R package for iRODS (Dec 2022, Chapel Hill, US) ([YouTube](https://www.youtube.com/watch?v=tZbWstlXKzE)) </td></tr>
+<tr><td>[TRiRODS](https://irods.org/trirods/): rirods: A first release of a pure R package for iRODS (Dec 2022, Chapel Hill, US) ([YouTube](https://www.youtube.com/watch?v=tZbWstlXKzE))
+</br></td></tr>
 
-<tr><td>[iRODS User Group Meeting](https://irods.org/ugm2022/), 7th July 2022, Leuven, Towards the FAIRification of lab-data.  ([YouTube](https://www.youtube.com/watch?v=nBpmkTWji-g)) </td></tr>
+<tr><td>[iRODS User Group Meeting](https://irods.org/ugm2022/), 7th July 2022, Leuven, Towards the FAIRification of lab-data.  ([YouTube](https://www.youtube.com/watch?v=nBpmkTWji-g)) </br></td></tr>
 
 </table>
 
