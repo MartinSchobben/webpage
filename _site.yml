@@ -23,6 +23,6 @@ output:
     theme: spacelab
     highlight: zenburn
     includes:
-      after_body: footer.html
-      in_header: header.html
+      after_body: style/footer.html
+      in_header: style/header.html
 output_dir: "docs"
