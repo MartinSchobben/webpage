@@ -8,5 +8,8 @@
 
 # derived files
 *.html
-
+!style/footer.html
+!style/header.html
+!style/logo.html
+!style/body.html
 #
