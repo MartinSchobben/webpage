@@ -2,7 +2,6 @@
 title: "Projects"
 output:
   html_document:
-    css: TOC_edited.css
     toc: TRUE
     toc_depth: 2
     toc_float:
@@ -11,7 +10,6 @@ bibliography: biblio/library.bib
 csl: style/science.csl
 ---
 
-
 ---
 
 <h2 style="text-align:center;", title="datamanagement">
@@ -19,7 +17,7 @@ Data management</h2>
 
 <p style="text-align:center;">
 <i>
-**Safeguarding data for the future.**
+**Safeguarding data for the future**
 </i>
 </p>
 
@@ -33,9 +31,11 @@ Low-level access to raw data and insights in workflows is not necessary for all 
 
 The **integrated lab** is a solution to centralize data management of the traditional unconnected lab by collecting and harmonizing data streams from various lab instruments, and by providing open-sourced alternatives for routine analytical workflows. The tool [panacea](https://github.com/FAIReLABS/panacea) is an attempt to realize this goal.
 
-<p align="center">
-![Integrated lab solution versus traditional unconnected lab set-ups.](https://github.com/FAIReLABS/webpage/blob/master/datamanagement_infra.png?raw=true)
-</p>
+
+![](https://github.com/FAIReLABS/webpage/blob/master/datamanagement_infra.png?raw=true)
+<p style="text-align:justify;"><font size="2"><i>
+Integrated lab solution versus traditional unconnected lab set-ups.
+</i> </font></p>
 
 ---
 

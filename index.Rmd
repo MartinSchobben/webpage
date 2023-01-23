@@ -38,7 +38,6 @@ I am a geoscientist who applies creative, data-driven solutions to answer fundam
 
 My current profile encompasses several interests: 
 
- - [open science](https://martinschobben.github.io/webpage/Projects.html)
  - [data management](https://martinschobben.github.io/webpage/Projects.html)
  - [data visualization](https://martinschobben.github.io/webpage/Projects.html)
 
@@ -50,7 +49,7 @@ My current profile encompasses several interests:
 
 <tr><td>[TRiRODS](https://irods.org/trirods/): rirods: A first release of a pure R package for iRODS (Dec 2022, Chapel Hill, US) ([YouTube](https://www.youtube.com/watch?v=tZbWstlXKzE))
 </br></td></tr>
-
+<tr><td></br></td></tr>
 <tr><td>[iRODS User Group Meeting](https://irods.org/ugm2022/), 7th July 2022, Leuven, Towards the FAIRification of lab-data.  ([YouTube](https://www.youtube.com/watch?v=nBpmkTWji-g)) </br></td></tr>
 
 </table>
