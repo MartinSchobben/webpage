@@ -8,6 +8,7 @@
 
 # derived files
 *.html
+!graphical_cv.html
 !style/footer.html
 !style/header.html
 !style/logo.html

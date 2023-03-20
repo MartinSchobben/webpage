@@ -8,8 +8,8 @@ navbar:
       href: about.html
     - text: "Projects"
       href: Projects.html
-    # - text: "CV"
-    #   href: CV.html
+    - text: "CV"
+      href: graphical_cv.html
     - text: "Publications"
       href: Publications.html
     - text: "Promoted"
@@ -26,3 +26,4 @@ output:
       after_body: style/footer.html
       in_header: style/header.html
 output_dir: "docs"
+include: ["graphical_cv.html"]
